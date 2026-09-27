@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "usr_owner_janeduke",
+      "email": "janedukemusic@proton.me",
+      "name": "Jeanne Duke",
+      "passwordHash": "6632a410763f1f6c4b46f00d0a1719c2f72a1781d0edab7c69fb78ad8bbddbf3",
+      "role": "owner",
+      "createdAt": "2026-09-27T03:44:00.000Z"
+    },
+    {
+      "id": "usr_c69b65e0-25da-4504-a1d3-8485080c5f13",
+      "email": "listener1@example.com",
+      "name": "Regular Listener",
+      "passwordHash": "d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1",
+      "role": "listener",
+      "createdAt": "2026-09-27T02:55:11.571Z"
+    }
+  ],
+  "tracks": [],
+  "playlists": []
+}

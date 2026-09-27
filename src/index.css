@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-primary: #d4af37;
+    --gold-bright: #ffd700;
+    --gold-accent: #f5c96a;
+    --gold-muted: #b38b4d;
+    --wine-dark: #190808;
+    --wine-card: #280a0a;
+    --wine-border: #5c1f1f;
+    --wine-button: #4a1f1f;
+    --wine-hover: #6b2a2a;
+  }
+
+  body {
+    background: radial-gradient(
+      ellipse at center,
+      #3a0000 0%,
+      #2a0000 25%,
+      #1a0000 45%,
+      #0f0000 65%,
+      #000000 100%
+    );
+    background-attachment: fixed;
+    color: #d4af37;
+    font-family: 'Libre Baskerville', Georgia, serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Custom scrollbar for gothic vibe */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0f0000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #4a1f1f;
+    border: 1px solid #b38b4d;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6b2a2a;
+    border-color: #ffd700;
+  }
+}
+
+/* Reference button and card styles from user style.css */
+.wav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: #4a1f1f;
+  color: #f5d68a;
+  border: 2px solid #b38b4d;
+  border-radius: 6px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(181, 139, 77, 0.4);
+  cursor: pointer;
+}
+
+.wav-button:hover:not(:disabled) {
+  background: #6b2a2a;
+  color: #ffeb9e;
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.7);
+  border-color: #ffd700;
+}
+
+.wav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.gothic-card {
+  background: rgba(30, 8, 8, 0.85);
+  border: 1.5px solid #5c1f1f;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.gothic-card:hover {
+  border-color: #d4af37;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+}
+
+.gold-glow-text {
+  color: #cd900c;
+  text-shadow: 0 0 16px rgba(247, 183, 46, 0.5);
+}
+
+.gold-sub-text {
+  color: #f5c96a;
+  text-shadow: 0 0 12px rgba(217, 147, 26, 0.35);
+}
+
+/* Range input scrubber styling */
+input[type="range"] {
+  accent-color: #d4af37;
+}
+
+/* Vinyl rotation animation */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 14s linear infinite;
+}
+
+.animate-spin-paused {
+  animation-play-state: paused;
+}

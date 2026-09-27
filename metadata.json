@@ -1,0 +1,8 @@
+{
+  "name": "Jane Duke Music Player",
+  "description": "Gothic gold-accented Spotify clone music player with persistent audio bar, album grid, playlist manager, offline playback, and owner upload controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
